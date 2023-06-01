@@ -1,0 +1,21 @@
+.navigation {
+  padding-bottom: 5px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+.navigation_list {
+  display: flex;
+}
+
+.navigation_item {
+  list-style-type: none;
+}
+
+.navigation_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.navigation_link {
+  text-decoration: none;
+  color: black;
+}

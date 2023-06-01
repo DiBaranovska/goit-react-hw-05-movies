@@ -1,0 +1,16 @@
+.reviews_text {
+  padding: 20px;
+}
+
+.reviews_list {
+  list-style: none;
+  padding-right: 10px;
+}
+
+.reviews_item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.reviews_content {
+  font-size: 15px;
+}

@@ -1,0 +1,20 @@
+.cast {
+  list-style: none;
+}
+
+.cast_img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.cast_name {
+  font-weight: bold;
+}
+
+.cast_item {
+  display: flex;
+}
+
+.cast_item:not(:last-child) {
+  margin-bottom: 10px;
+}
