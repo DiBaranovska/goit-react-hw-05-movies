@@ -10,7 +10,7 @@ const ReviewsList = ({ reviews }) => {
       </div>
     ));
   } else {
-    return (reviewResults = (
+    reviewResults = (
       <ul className={css.reviews_list}>
         {reviews.results.map(resalt => {
           return (
@@ -21,9 +21,10 @@ const ReviewsList = ({ reviews }) => {
           );
         })}
       </ul>
-    ));
+    );
+    return reviewResults;
   }
-  return reviewResults;
+
 };
 export default ReviewsList;
 
