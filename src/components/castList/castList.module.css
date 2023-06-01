@@ -1,18 +1,27 @@
 .cast {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(33.3333333333% - 20px);
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .cast_img {
-  width: 100px;
+  width: 150px;
+  min-height: 225px;
   margin-right: 10px;
+  object-fit: contain;
 }
 
 .cast_name {
   font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.cast_item {
-  display: flex;
+.cast_character {
+  width: 150px;
 }
 
 .cast_item:not(:last-child) {

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import css from './movieItem.module.css';
 import { Link, Outlet } from 'react-router-dom';
 
-
 const MovieItem = ({ movie }) => {
   const filmDate = new Date(movie.release_date);
   return (
@@ -36,18 +35,22 @@ const MovieItem = ({ movie }) => {
       <section>
         <div className={css.details}>
           <h4>Additional information</h4>
-          <ul>
-            <li>
-              <Link to="cast">Cast</Link>
+          <ul className={css.movie_details_list}>
+            <li className={css.movie_details_item}>
+              <Link to="cast" className={css.movie_details_link}>
+                Cast
+              </Link>
             </li>
-            <li>
-              <Link to="reviews">Reviews</Link>
+            <li className={css.movie_details_item}>
+              <Link to="reviews" className={css.movie_details_link}>
+                Reviews
+              </Link>
             </li>
           </ul>
         </div>
         <Suspense fallback={<div>Loading...</div>}>
           <Outlet />
-          </Suspense>
+        </Suspense>
       </section>
     </>
   );
@@ -57,4 +60,4 @@ export default MovieItem;
 
 MovieItem.propTypes = {
   movie: PropTypes.object.isRequired,
-}
+};

@@ -1,38 +1,38 @@
 .movies_founder {
-    padding: 10px;
-    display: flex;
+  padding: 10px;
+  display: flex;
 }
 
 .movies_input {
-    margin-left: 20px;
+  margin-left: 20px;
 
-    width: 250px;
-    height: 22px;
-    font-size: 15px;
-    outline: none;
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-right: none;
+  width: 250px;
+  height: 22px;
+  font-size: 15px;
+  outline: none;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: none;
 }
 
 .movies_input:focus {
-    border-color: rgb(159, 0, 255);
+  border-color: rgb(159, 0, 255);
 }
 
 .movies_btn {
-    height: 27px;
-        border: none;
-        color: white;
-        background-color: rgb(159, 0, 255);
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        transition: 500ms background-color linear;
+  height: 27px;
+  border: none;
+  color: white;
+  background-color: rgb(159, 0, 255);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: 500ms background-color linear;
 }
 
 .movies_btn:hover,
 .movies_btn:focus {
-background-color: rgb(0 154 255);
-transition: 500ms background-color linear;
+  background-color: rgb(0 154 255);
+  transition: 500ms background-color linear;
 }

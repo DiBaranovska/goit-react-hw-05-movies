@@ -1,6 +1,6 @@
 .movies_list_title {
   margin-left: 5px;
-  color: rgb(159, 0, 255);;
+  color: rgb(159, 0, 255);
 }
 
 ul {
@@ -9,11 +9,10 @@ ul {
 
 .movies_list_item {
   text-decoration: none;
-      display: flex;
-    flex-direction: column;
-        margin: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
 }
-
 
 .movies_list_name:hover,
 .movies_list_name:focus {
@@ -23,20 +22,21 @@ ul {
 
 .movies_list_img {
   width: 150px;
-  min-height: 150px;
+  min-height: 225px;
+  margin-bottom: 10px;
 }
 
 .movies_list_name {
-color: black;
-    font-size: 16px;
-      transition: 300ms color linear;
-    width: 150px;}
+  color: black;
+  font-size: 16px;
+  transition: 300ms color linear;
+  width: 150px;
+}
 
-
-      .movies_list {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: calc(33.3333333333% - 20px);
-          margin-top: 20px;
-          margin-left: 20px;
-      }
+.movies_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(33.3333333333% - 20px);
+  margin-top: 20px;
+  margin-left: 20px;
+}

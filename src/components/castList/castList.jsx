@@ -13,7 +13,7 @@ const CastList = ({ cast }) => {
           imgUrl = `https://image.tmdb.org/t/p/w500${profile_path}`;
         }
         return (
-          <li key={id} className={css.cast_item}>
+          <li key={id}>
             <img
               className={css.cast_img}
               src={imgUrl}
@@ -21,7 +21,7 @@ const CastList = ({ cast }) => {
             />
             <div>
               <p className={css.cast_name}>{name}</p>
-              <p>{`Character: ${character}`}</p>
+              <p className={css.cast_character}>{`Character: ${character}`}</p>
             </div>
           </li>
         );
@@ -34,4 +34,4 @@ export default CastList;
 
 CastList.propTypes = {
   cast: PropTypes.array.isRequired,
-}
+};

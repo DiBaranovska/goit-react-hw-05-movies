@@ -1,28 +1,57 @@
-
-
 .about_film {
-    padding: 10px;
-    display: flex;
-    box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
 .about_film_img {
-    width: 300px;
-    height: 100%;
-    margin-right: 10px;
+  width: 300px;
+  height: 100%;
+  margin-right: 10px;
 }
 
 .about_film_genres {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
 }
 
 .about_film_genres_item:not(:last-child) {
-padding-right: 5px;
+  padding-right: 5px;
 }
 
 .details {
-    padding: 10px;
-    box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+.movie_details_list {
+  display: flex;
+  padding-left: 0;
+}
+
+.movie_details_link {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(159, 0, 255);
+  transition: 500ms background-color linear;
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+}
+
+.movie_details_link:hover,
+.movie_details_link:focus {
+  background-color: rgb(0 154 255);
+  transition: 500ms background-color linear;
+}
+.movie_details_item {
+  list-style: none;
+}
+
+.movie_details_item:not(:last-child) {
+  margin-right: 5px;
 }
