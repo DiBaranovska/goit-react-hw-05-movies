@@ -43,6 +43,7 @@ const Movies = () => {
       }
     )
       .then(res => {
+        setMovieName(movieNameId)
         if (res.ok) {
           return res.json();
         }
