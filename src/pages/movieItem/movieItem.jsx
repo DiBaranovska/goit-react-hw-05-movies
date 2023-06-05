@@ -5,9 +5,15 @@ import { Link, Outlet } from 'react-router-dom';
 import defaultImg from '../../images/movie-poster-coming-soon-2.jpg';
 
 const MovieItem = ({ movie }) => {
-  const filmDate = new Date(movie.release_date);
+  const filmDate = (date) => {
+    if (date === '') { return ('') }
+    else {
+      const data = new Date(date).getFullYear();
+      return (` (${data})`)
+    }
+  }
   let imgUrl = null;
-      if (movie.poster_path === null) {
+  if (movie.poster_path === null) {
       imgUrl = `${defaultImg}`;
       } else {
       imgUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
@@ -22,7 +28,7 @@ const MovieItem = ({ movie }) => {
           loading="lazy"
         />
         <div>
-          <h1>{`${movie.title} (${filmDate.getFullYear()})`}</h1>
+          <h1>{`${movie.title}${filmDate(movie.release_date)}`}</h1>
           <p>{`User Score: ${Math.round(movie.vote_average * 10)}%`}</p>
 
           <h2>Overview</h2>
