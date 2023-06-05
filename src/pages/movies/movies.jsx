@@ -63,7 +63,7 @@ const Movies = () => {
       {error && <h1>{error.message}</h1>}
       {loading && <Loader />}
       <form onSubmit={handleSubmit} className={css.movies_founder}>
-        <input type="text" value={movieName} onChange={handleInputChange} className={css.movies_input}/>
+        <input type="text" value={movieName} placeholder='enter the movie name' onChange={handleInputChange} className={css.movies_input}/>
         <button type="submit" className={css.movies_btn}>Search</button>
       </form>
     {movies && <MoviestList movies={movies} />}

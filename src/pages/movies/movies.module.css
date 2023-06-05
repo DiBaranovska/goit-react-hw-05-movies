@@ -21,6 +21,10 @@
   border-color: rgb(159, 0, 255);
 }
 
+.movies_input::placeholder{
+  font-size: 13px;
+}
+
 .movies_btn {
   height: 27px;
   border: none;

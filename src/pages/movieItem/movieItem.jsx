@@ -2,15 +2,22 @@ import { Suspense } from 'react';
 import PropTypes from 'prop-types';
 import css from './movieItem.module.css';
 import { Link, Outlet } from 'react-router-dom';
+import defaultImg from '../../images/movie-poster-coming-soon-2.jpg';
 
 const MovieItem = ({ movie }) => {
   const filmDate = new Date(movie.release_date);
+  let imgUrl = null;
+      if (movie.poster_path === null) {
+      imgUrl = `${defaultImg}`;
+      } else {
+      imgUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+      }
   return (
     <>
       <section className={css.about_film}>
         <img
           className={css.about_film_img}
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          src={imgUrl}
           alt={`poster of the movie ${movie.title}`}
           loading="lazy"
         />
